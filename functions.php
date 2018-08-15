@@ -69,6 +69,15 @@ function celestial_register_fields() {
             'schema'            => null
         )
     );
+    // Add ACF field
+    // register_rest_field('page', 
+    //     'acf_field', 
+    //     array(
+    //         'get_callback'      => 'acf_get_post_meta',
+    //         'update_callback'   => null,
+    //         'schema'            => null
+    //     )
+    // );
 }
 add_action( 'rest_api_init', 'celestial_register_fields' );
 
@@ -85,6 +94,9 @@ function celestial_get_image_src( $object, $field_name, $request ) {
 function celestial_published_date( $object, $field_name, $request ) {
     return get_the_time('F j, Y');
 }
+// function acf_get_post_meta($object, $field_name, $request){
+//     return get_post_meta($object['id'], $field_name, true); 
+// }
 
 function celestial_excerpt_length( $length ) {
     return 20;

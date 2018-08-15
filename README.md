@@ -2,7 +2,9 @@
 A WordPress theme using React 16, Bootstrap 4 and Webpack 3.
 
 Based on Celestial theme from https://github.com/m-muhsin/celestial
+
 Tutorial at https://www.smashingmagazine.com/2018/03/react-wordpress-web-app
+
 ![screenshot](screenshot.jpg)
 
 Setup
